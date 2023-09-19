@@ -1,0 +1,123 @@
+\hypertarget{classSingleton}{}\doxysection{Singleton Class Reference}
+\label{classSingleton}\index{Singleton@{Singleton}}
+
+
+A \mbox{\hyperlink{classSingleton}{Singleton}} class to manage data of \mbox{\hyperlink{classIEntity}{I\+Entity}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Singleton.\+h$>$}
+
+
+
+Collaboration diagram for Singleton\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classSingleton__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingleton_aa5473e882cb01b29ea07c86faff0e407}\label{classSingleton_aa5473e882cb01b29ea07c86faff0e407}} 
+\mbox{\hyperlink{classSingleton_aa5473e882cb01b29ea07c86faff0e407}{Singleton}} (const \mbox{\hyperlink{classSingleton}{Singleton}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy constructor to enforce the \mbox{\hyperlink{classSingleton}{Singleton}} pattern. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSingleton_ad81db582e72a313f49ef3eefb9ec461c}\label{classSingleton_ad81db582e72a313f49ef3eefb9ec461c}} 
+\mbox{\hyperlink{classSingleton}{Singleton}} \& \mbox{\hyperlink{classSingleton_ad81db582e72a313f49ef3eefb9ec461c}{operator=}} (const \mbox{\hyperlink{classSingleton}{Singleton}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted assignment operator to enforce the \mbox{\hyperlink{classSingleton}{Singleton}} pattern. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_a9855f80866e959ef156cbf90bdd7a2f6}{set\+Up\+Data}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity\+Data)
+\begin{DoxyCompactList}\small\item\em Set up data for \mbox{\hyperlink{classIEntity}{I\+Entity}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_a63c24b5f81d25f7219091a64fd8da0d1}{write\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Write the collected data to an output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSingleton}{Singleton}} $\ast$ \mbox{\hyperlink{classSingleton_ae5cc005e947b0f851ea8db2d97123d66}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classSingleton}{Singleton}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingleton_a5575dcca5c684566cc0369e4d2553c7c}\label{classSingleton_a5575dcca5c684566cc0369e4d2553c7c}} 
+vector$<$ string $>$ {\bfseries entity\+Name}
+\item 
+\mbox{\Hypertarget{classSingleton_abeadc8ee57ffef146e7ef0b7b1c9f966}\label{classSingleton_abeadc8ee57ffef146e7ef0b7b1c9f966}} 
+vector$<$ int $>$ {\bfseries delivery\+Volume}
+\item 
+\mbox{\Hypertarget{classSingleton_aee06e6715b97010072b685747e2bf609}\label{classSingleton_aee06e6715b97010072b685747e2bf609}} 
+vector$<$ float $>$ {\bfseries entity\+Speed}
+\item 
+\mbox{\Hypertarget{classSingleton_aa7f8a5e80e392a6ac5800e0e4437d92b}\label{classSingleton_aa7f8a5e80e392a6ac5800e0e4437d92b}} 
+vector$<$ float $>$ {\bfseries trip\+Distance}
+\item 
+\mbox{\Hypertarget{classSingleton_af35f7f59d9f2559d7ebb387ad82ea70e}\label{classSingleton_af35f7f59d9f2559d7ebb387ad82ea70e}} 
+vector$<$ string $>$ {\bfseries entity\+Strategy}
+\item 
+\mbox{\Hypertarget{classSingleton_afc784eaca37389ed9f498fa91ea2715c}\label{classSingleton_afc784eaca37389ed9f498fa91ea2715c}} 
+vector$<$ float $>$ {\bfseries battery\+Status}
+\item 
+\mbox{\Hypertarget{classSingleton_ae87b1c3058c5ebc8b250f28cfc72178d}\label{classSingleton_ae87b1c3058c5ebc8b250f28cfc72178d}} 
+vector$<$ float $>$ {\bfseries trip\+Duration}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingleton_af03df9103f0b21357f2af4260df21f94}\label{classSingleton_af03df9103f0b21357f2af4260df21f94}} 
+static \mbox{\hyperlink{classSingleton}{Singleton}} $\ast$ {\bfseries the\+Instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classSingleton}{Singleton}} class to manage data of \mbox{\hyperlink{classIEntity}{I\+Entity}} objects. 
+
+\mbox{\hyperlink{classSingleton}{Singleton}} This class is a \mbox{\hyperlink{classSingleton}{Singleton}} pattern implementation to manage data of \mbox{\hyperlink{classIEntity}{I\+Entity}} objects. It provides methods to set up data, write data and get an instance of the \mbox{\hyperlink{classSingleton}{Singleton}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSingleton_ae5cc005e947b0f851ea8db2d97123d66}\label{classSingleton_ae5cc005e947b0f851ea8db2d97123d66}} 
+\index{Singleton@{Singleton}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSingleton}{Singleton}} $\ast$ Singleton\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the \mbox{\hyperlink{classSingleton}{Singleton}} instance. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classSingleton}{Singleton}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSingleton_a9855f80866e959ef156cbf90bdd7a2f6}\label{classSingleton_a9855f80866e959ef156cbf90bdd7a2f6}} 
+\index{Singleton@{Singleton}!setUpData@{setUpData}}
+\index{setUpData@{setUpData}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{setUpData()}{setUpData()}}
+{\footnotesize\ttfamily void Singleton\+::set\+Up\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity\+Data }\end{DoxyParamCaption})}
+
+
+
+Set up data for \mbox{\hyperlink{classIEntity}{I\+Entity}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+Data} & Pointer to an \mbox{\hyperlink{classIEntity}{I\+Entity}} object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_a63c24b5f81d25f7219091a64fd8da0d1}\label{classSingleton_a63c24b5f81d25f7219091a64fd8da0d1}} 
+\index{Singleton@{Singleton}!writeData@{writeData}}
+\index{writeData@{writeData}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily void Singleton\+::write\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Write the collected data to an output. 
+
+\begin{DoxyReturn}{Returns}
+Data.\+csv file and update the values when adding more trips 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/schr1684/csci-\/3081w-\/\+S23/\+Team-\/001-\/12-\/homework4/libs/transit/include/Singleton.\+h\item 
+/home/schr1684/csci-\/3081w-\/\+S23/\+Team-\/001-\/12-\/homework4/libs/transit/src/Singleton.\+cc\end{DoxyCompactItemize}

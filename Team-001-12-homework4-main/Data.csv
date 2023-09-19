@@ -1,0 +1,5 @@
+Entity Name,Delivery Volume,Entity Speed,Trip Distance,Entity Strategy,Battery Status,Trip Duration
+Drone,3,30,2926.19,dijkstra,332.605,169.869
+Robot 1,1,30,453.583,astar,0,17.8008
+Robot 2,1,30,360.945,dfs,0,18.6003
+Robot 3,1,30,390.054,dijkstra,0,19.7543

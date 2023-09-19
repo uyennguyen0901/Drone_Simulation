@@ -1,0 +1,491 @@
+\hypertarget{classBatteryDecorator}{}\doxysection{Battery\+Decorator Class Reference}
+\label{classBatteryDecorator}\index{BatteryDecorator@{BatteryDecorator}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and is responsible for creating and updating the battery of the drone  
+
+
+
+
+{\ttfamily \#include $<$Battery\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classBatteryDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classBatteryDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBatteryDecorator_a8190415ba7bed8a4a2b71f5e4dcd1a92}{Battery\+Decorator}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Construct a new battery object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}\label{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}} 
+\mbox{\hyperlink{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}{$\sim$\+Battery\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the battery object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBatteryDecorator_aa46bff3507b23ab8da960f1993e8b4f1}{Get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em get battery\textquotesingle{}s id \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryDecorator_a81bfdac5729b0d60eb0ace494aa70f7f}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em get battery\textquotesingle{}s position \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryDecorator_a8eae94d1ce0dc372dcac0d16a70d76be}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s direction \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryDecorator_a243b324a6f96ea93e9461f5b92a1748f}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s destination \end{DoxyCompactList}\item 
+virtual Json\+Object \mbox{\hyperlink{classBatteryDecorator_a250143c242ca4466e1edcd1dd40d0e75}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s details \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classBatteryDecorator_a00317a259d0e57186954e8f6be64d28d}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s speed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBatteryDecorator_a7975d254f8762b49a9ac7bc826eb21f3}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s availability \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBatteryDecorator_ab79be035014db270dcdf675d283cd70b}{Get\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em get percentage of battery \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classBatteryDecorator_afcc3f29f1735782c297df898d9ac0f3f}{Get\+Strategy\+Name}} ()
+\begin{DoxyCompactList}\small\item\em get entity\textquotesingle{}s strategy name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a34e1ab1688e9afbf6f8ecb6fee667b40}{Set\+Graph}} (const I\+Graph $\ast$igraph)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s graph \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_af036c6ad491998c850737992c37ee006}{Set\+Availability}} (bool choice)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s availability \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a2a5f515a15211da9ed8b684c5cab4de5}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ stations)
+\begin{DoxyCompactList}\small\item\em update entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_aa9983f260bc3f8759cb82246faf63554}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a154b16708fa5be477b315097da426a4d}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s direction \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBatteryDecorator_acf913786711929e4ecff14f5393af610}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s destination \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a436faa45db3d8b95d51377047e543854}{Set\+Strategy\+Name}} (string strategy\+Name\+\_\+)
+\begin{DoxyCompactList}\small\item\em set entity\textquotesingle{}s strategy name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_aaef0fa7060b5a5850f7abc7c2372b8c3}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em rotate entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a20bfca93b023c5a8343ec3e07405c1ca}{Jump}} (double height)
+\begin{DoxyCompactList}\small\item\em make entity jump \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a09138c04ea2191b4f2dc90a021df8462}{Set\+Percentage}} (double per)
+\begin{DoxyCompactList}\small\item\em set the initial percentage of the battery (500) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a895fc514fedbb9c461db207e44ca5c3a}{Get\+Nearest\+Station}} (vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ stations)
+\begin{DoxyCompactList}\small\item\em get the neareast charging station \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBatteryDecorator_a1f9fcffd919e896dceaded4278ba4be1}{Get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em get drone\textquotesingle{}s color \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_af1036f02018970aa7c4bf0a658ddffcb}{Set\+Color}} (string col\+\_\+)
+\begin{DoxyCompactList}\small\item\em set drone\textquotesingle{}s color \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a9712f73c4841cc149f72e9bd036be06f}\label{classBatteryDecorator_a9712f73c4841cc149f72e9bd036be06f}} 
+\mbox{\hyperlink{classBatteryDecorator_a9712f73c4841cc149f72e9bd036be06f}{Battery\+Decorator}} (const \mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} \&batterydecorator)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor remove \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a381f36f2c076c950312747c0a09e4c91}\label{classBatteryDecorator_a381f36f2c076c950312747c0a09e4c91}} 
+\mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} \& \mbox{\hyperlink{classBatteryDecorator_a381f36f2c076c950312747c0a09e4c91}{operator=}} (const \mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} \&batterydecorator)=delete
+\begin{DoxyCompactList}\small\item\em assignmet operator remove \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBatteryDecorator_ad40ac7862c8f779ea57bb252746a6b5c}{total\+Distance}} (std\+::vector$<$ std\+::vector$<$ float $>$$>$ path)
+\begin{DoxyCompactList}\small\item\em Calculate the total distance of the trip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and is responsible for creating and updating the battery of the drone 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_a8190415ba7bed8a4a2b71f5e4dcd1a92}\label{classBatteryDecorator_a8190415ba7bed8a4a2b71f5e4dcd1a92}} 
+\index{BatteryDecorator@{BatteryDecorator}!BatteryDecorator@{BatteryDecorator}}
+\index{BatteryDecorator@{BatteryDecorator}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{BatteryDecorator()}{BatteryDecorator()}}
+{\footnotesize\ttfamily Battery\+Decorator\+::\+Battery\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Construct a new battery object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & details for entity \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_a7975d254f8762b49a9ac7bc826eb21f3}\label{classBatteryDecorator_a7975d254f8762b49a9ac7bc826eb21f3}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Battery\+Decorator\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s availability 
+
+return drone\textquotesingle{}s availability 
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463b1}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a1f9fcffd919e896dceaded4278ba4be1}\label{classBatteryDecorator_a1f9fcffd919e896dceaded4278ba4be1}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily string Battery\+Decorator\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get drone\textquotesingle{}s color 
+
+\begin{DoxyReturn}{Returns}
+drone\textquotesingle{}s color 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a1326f6c0e0377a4fbde8a8c02fb6ccb3}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a243b324a6f96ea93e9461f5b92a1748f}\label{classBatteryDecorator_a243b324a6f96ea93e9461f5b92a1748f}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Decorator\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s destination 
+
+return drone\textquotesingle{}s destination 
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a250143c242ca4466e1edcd1dd40d0e75}\label{classBatteryDecorator_a250143c242ca4466e1edcd1dd40d0e75}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily virtual Json\+Object Battery\+Decorator\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s details 
+
+return drone\textquotesingle{}s details 
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a8eae94d1ce0dc372dcac0d16a70d76be}\label{classBatteryDecorator_a8eae94d1ce0dc372dcac0d16a70d76be}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Decorator\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s direction 
+
+return drone\textquotesingle{}s direction 
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aa46bff3507b23ab8da960f1993e8b4f1}\label{classBatteryDecorator_aa46bff3507b23ab8da960f1993e8b4f1}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetId@{GetId}}
+\index{GetId@{GetId}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily virtual int Battery\+Decorator\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get battery\textquotesingle{}s id 
+
+\begin{DoxyReturn}{Returns}
+drone\textquotesingle{}s ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBatteryDecorator_a895fc514fedbb9c461db207e44ca5c3a}\label{classBatteryDecorator_a895fc514fedbb9c461db207e44ca5c3a}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetNearestStation@{GetNearestStation}}
+\index{GetNearestStation@{GetNearestStation}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetNearestStation()}{GetNearestStation()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Get\+Nearest\+Station (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{stations }\end{DoxyParamCaption})}
+
+
+
+get the neareast charging station 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & vector of the stations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryDecorator_ab79be035014db270dcdf675d283cd70b}\label{classBatteryDecorator_ab79be035014db270dcdf675d283cd70b}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetPercentage@{GetPercentage}}
+\index{GetPercentage@{GetPercentage}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetPercentage()}{GetPercentage()}}
+{\footnotesize\ttfamily float Battery\+Decorator\+::\+Get\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get percentage of battery 
+
+\begin{DoxyReturn}{Returns}
+return percentage of battery 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBatteryDecorator_a81bfdac5729b0d60eb0ace494aa70f7f}\label{classBatteryDecorator_a81bfdac5729b0d60eb0ace494aa70f7f}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Decorator\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get battery\textquotesingle{}s position 
+
+return drone\textquotesingle{}s position 
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a00317a259d0e57186954e8f6be64d28d}\label{classBatteryDecorator_a00317a259d0e57186954e8f6be64d28d}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily virtual float Battery\+Decorator\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s speed 
+
+return drone\textquotesingle{}s speed 
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_afcc3f29f1735782c297df898d9ac0f3f}\label{classBatteryDecorator_afcc3f29f1735782c297df898d9ac0f3f}} 
+\index{BatteryDecorator@{BatteryDecorator}!GetStrategyName@{GetStrategyName}}
+\index{GetStrategyName@{GetStrategyName}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{GetStrategyName()}{GetStrategyName()}}
+{\footnotesize\ttfamily virtual string Battery\+Decorator\+::\+Get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get entity\textquotesingle{}s strategy name 
+
+return drone\textquotesingle{}s strategy name \mbox{\Hypertarget{classBatteryDecorator_a20bfca93b023c5a8343ec3e07405c1ca}\label{classBatteryDecorator_a20bfca93b023c5a8343ec3e07405c1ca}} 
+\index{BatteryDecorator@{BatteryDecorator}!Jump@{Jump}}
+\index{Jump@{Jump}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Jump (\begin{DoxyParamCaption}\item[{double}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+make entity jump 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & how height to jump \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aaef0fa7060b5a5850f7abc7c2372b8c3}\label{classBatteryDecorator_aaef0fa7060b5a5850f7abc7c2372b8c3}} 
+\index{BatteryDecorator@{BatteryDecorator}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+rotate entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & angle to rotate \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_af036c6ad491998c850737992c37ee006}\label{classBatteryDecorator_af036c6ad491998c850737992c37ee006}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetAvailability@{SetAvailability}}
+\index{SetAvailability@{SetAvailability}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetAvailability()}{SetAvailability()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Availability (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+set entity\textquotesingle{}s availability 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & choice of boolean (T or F) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_af1036f02018970aa7c4bf0a658ddffcb}\label{classBatteryDecorator_af1036f02018970aa7c4bf0a658ddffcb}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{string}]{col\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set drone\textquotesingle{}s color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col\+\_\+} & drone\textquotesingle{}s color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryDecorator_acf913786711929e4ecff14f5393af610}\label{classBatteryDecorator_acf913786711929e4ecff14f5393af610}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily virtual void Battery\+Decorator\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+set entity\textquotesingle{}s destination 
+
+
+\begin{DoxyParams}{Parameters}
+{\em des\+\_\+} & destination to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a154b16708fa5be477b315097da426a4d}\label{classBatteryDecorator_a154b16708fa5be477b315097da426a4d}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+set entity\textquotesingle{}s direction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+\_\+} & direction to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a34e1ab1688e9afbf6f8ecb6fee667b40}\label{classBatteryDecorator_a34e1ab1688e9afbf6f8ecb6fee667b40}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetGraph@{SetGraph}}
+\index{SetGraph@{SetGraph}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetGraph()}{SetGraph()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Graph (\begin{DoxyParamCaption}\item[{const I\+Graph $\ast$}]{igraph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+set entity\textquotesingle{}s graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em igraph} & graph to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a09138c04ea2191b4f2dc90a021df8462}\label{classBatteryDecorator_a09138c04ea2191b4f2dc90a021df8462}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetPercentage@{SetPercentage}}
+\index{SetPercentage@{SetPercentage}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetPercentage()}{SetPercentage()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Percentage (\begin{DoxyParamCaption}\item[{double}]{per }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set the initial percentage of the battery (500) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em per} & the amount of battery percentage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryDecorator_aa9983f260bc3f8759cb82246faf63554}\label{classBatteryDecorator_aa9983f260bc3f8759cb82246faf63554}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+set entity\textquotesingle{}s position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+} & position to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a436faa45db3d8b95d51377047e543854}\label{classBatteryDecorator_a436faa45db3d8b95d51377047e543854}} 
+\index{BatteryDecorator@{BatteryDecorator}!SetStrategyName@{SetStrategyName}}
+\index{SetStrategyName@{SetStrategyName}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{SetStrategyName()}{SetStrategyName()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Strategy\+Name (\begin{DoxyParamCaption}\item[{string}]{strategy\+Name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set entity\textquotesingle{}s strategy name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+Name\+\_\+} & name of strategy to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryDecorator_ad40ac7862c8f779ea57bb252746a6b5c}\label{classBatteryDecorator_ad40ac7862c8f779ea57bb252746a6b5c}} 
+\index{BatteryDecorator@{BatteryDecorator}!totalDistance@{totalDistance}}
+\index{totalDistance@{totalDistance}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{totalDistance()}{totalDistance()}}
+{\footnotesize\ttfamily float Battery\+Decorator\+::total\+Distance (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ float $>$$>$}]{path }\end{DoxyParamCaption})}
+
+
+
+Calculate the total distance of the trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path from drone\textquotesingle{}s position to robot\textquotesingle{}s position to robot\textquotesingle{}s destination \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+total distance of the trip 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBatteryDecorator_a2a5f515a15211da9ed8b684c5cab4de5}\label{classBatteryDecorator_a2a5f515a15211da9ed8b684c5cab4de5}} 
+\index{BatteryDecorator@{BatteryDecorator}!Update@{Update}}
+\index{Update@{Update}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{stations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & a vector of robot \\
+\hline
+{\em station} & vector of stations \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_ac7c49bc68ba896f4d1cfc372d8b68d92}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/schr1684/csci-\/3081w-\/\+S23/\+Team-\/001-\/12-\/homework4/libs/transit/include/Battery\+Decorator.\+h\item 
+/home/schr1684/csci-\/3081w-\/\+S23/\+Team-\/001-\/12-\/homework4/libs/transit/src/Battery\+Decorator.\+cc\end{DoxyCompactItemize}
